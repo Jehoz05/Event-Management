@@ -34,15 +34,4 @@
   transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
-  .actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
 
-  .actions button,
-  .actions a {
-    width: 100%;
-    text-align: center;
-  }
-}
