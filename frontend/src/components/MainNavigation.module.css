@@ -23,20 +23,4 @@
   color: var(--color-primary-800);
 }
 
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .list {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
-
-  .list a {
-    width: 100%;
-    text-align: center;
-  }
-}
