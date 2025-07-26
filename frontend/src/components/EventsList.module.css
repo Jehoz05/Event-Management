@@ -1,7 +1,6 @@
 .events {
   margin: 2rem auto;
   max-width: 40rem;
-  padding: 0 1rem;
 }
 
 .list {
@@ -10,15 +9,13 @@
   gap: 1rem;
 }
 
-/* Individual event item */
 .item a {
   text-decoration: none;
   color: inherit;
   display: flex;
   background-color: var(--color-gray-800);
-  border-radius: 8px;
+  border-radius: 4px;
   overflow: hidden;
-  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .item a:hover {
@@ -26,25 +23,18 @@
   background-color: var(--color-gray-700);
 }
 
-/* Image section */
 .item img {
   width: 33%;
-  height: auto;
   object-fit: cover;
 }
 
-/* Text content */
 .content {
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+}
+.item h2 {
+  margin: 0 0 1rem 0;
 }
 
-.item h2 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.2rem;
-}
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
