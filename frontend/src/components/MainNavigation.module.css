@@ -4,6 +4,8 @@
   padding: 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .list {
@@ -13,10 +15,28 @@
 
 .list a {
   text-decoration: none;
-  color: var(--color-primary-400);
+  color: var(--color-primary-500);
 }
 
 .list a:hover,
 .list a.active {
   color: var(--color-primary-800);
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .list a {
+    width: 100%;
+    text-align: center;
+  }
 }
