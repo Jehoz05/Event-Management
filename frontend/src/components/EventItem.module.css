@@ -5,40 +5,44 @@
 }
 
 .event img {
-  width: 30rem;
+  width: 100%;
+  max-width: 30rem;
   border-radius: 4px;
 }
 
 .actions {
   display: flex;
-  gap: 1rem;
   justify-content: center;
-  align-items: center;
-  padding: 0;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.actions a,
-.actions button {
-  padding: 0.25rem 1rem;
-  text-decoration: none;
-  font: inherit;
-  cursor: pointer;
+.actions button,
+.actions a {
   background-color: grey;
-  border-radius: 1rem;
-}
-
-.actions button {
-  border: none;
   color: var(--color-primary-800);
-}
-
-.actions a:hover,
-.actions button:hover {
-  transform: scale(120%);
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
   text-decoration: none;
   font: inherit;
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.actions button:hover,
+.actions a:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .actions button,
+  .actions a {
+    width: 100%;
+    text-align: center;
+  }
 }
