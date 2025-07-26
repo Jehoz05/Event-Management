@@ -24,14 +24,4 @@
   background-color: var(--color-primary-800);
 }
 
-@media (max-width: 768px) {
-  .list {
-    flex-direction: column;
-    width: 100%;
-  }
 
-  .list a {
-    width: 100%;
-    text-align: center;
-  }
-}
