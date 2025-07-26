@@ -1,51 +1,43 @@
 .newsletter {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0;
   max-width: 35rem;
-  margin: 0 auto;
+  margin: 2rem auto;
   background: rgba(255, 255, 255, 0.07);
-  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 0.75rem;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.1);
-  transition: all 0.3s ease-in-out;
 }
 
 .newsletter input {
   flex: 1;
-  font: inherit;
   padding: 0.75rem 1rem;
-  border: none;
   background-color: rgba(255, 255, 255, 0.15);
+  border: none;
   color: #fff;
   font-size: 1rem;
-  border-right: 1px solid rgba(255, 255, 255, 0.15);
-  outline: none;
-}
-
-.newsletter input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.newsletter input:focus {
-  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .newsletter button {
-  font: inherit;
   padding: 0.75rem 1.5rem;
-  border: none;
-  background-color: #ffd37c;
-  color: #1f1d1b;
+  background-color: var(--color-primary-500);
+  color: var(--color-gray-900);
   font-weight: bold;
+  border: none;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
 }
 
-.newsletter button:hover {
-  background-color: #fab833;
-  transform: scale(1.05);
+@media (max-width: 768px) {
+  .newsletter {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 100%;
+  }
+
+  .newsletter button {
+    margin-top: 0.5rem;
+  }
 }
