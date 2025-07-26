@@ -1,0 +1,44 @@
+.event {
+  max-width: 50rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.event img {
+  width: 30rem;
+  border-radius: 4px;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.actions a,
+.actions button {
+  padding: 0.25rem 1rem;
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+  background-color: grey;
+  border-radius: 1rem;
+}
+
+.actions button {
+  border: none;
+  color: var(--color-primary-800);
+}
+
+.actions a:hover,
+.actions button:hover {
+  transform: scale(120%);
+  padding: 0.25rem 1rem;
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 1rem;
+}

@@ -1,0 +1,88 @@
+.form {
+  max-width: 50rem;
+  margin: 3rem auto;
+  padding: 2rem 3rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  animation: fadeIn 0.6s ease-in;
+  color: #ffffff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #ffd37c;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.6rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #f4f3f1;
+  border: 1px solid #8a8784;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  transition: border 0.2s ease, background 0.2s ease;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #ffd37c;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.actions button[type="submit"] {
+  background-color: #ffd37c;
+  color: #1f1d1b;
+  box-shadow: 0 4px 15px rgba(255, 211, 124, 0.3);
+}
+
+.actions button[type="submit"]:hover {
+  background-color: #fab833;
+}
+
+.actions button[type="button"] {
+  background-color: transparent;
+  color: #ffd37c;
+  border: 2px solid #ffd37c;
+}
+
+.actions button[type="button"]:hover {
+  background-color: #ffd37c;
+  color: #1f1d1b;
+}
