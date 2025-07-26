@@ -3,7 +3,7 @@ import PageContent from "../components/PageContent";
 
 function NewsletterPage() {
   return (
-    <PageContent title="Join our awesome newsletter!">
+    <PageContent title="Join!">
       <NewsletterSignup />
     </PageContent>
   );
