@@ -7,6 +7,8 @@
 .list {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .list a {
@@ -18,7 +20,18 @@
 }
 
 .list a:hover,
-.list a:active,
 .list a.active {
-  background-color: var(--color-primary-600);
+  background-color: var(--color-primary-800);
+}
+
+@media (max-width: 768px) {
+  .list {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .list a {
+    width: 100%;
+    text-align: center;
+  }
 }
