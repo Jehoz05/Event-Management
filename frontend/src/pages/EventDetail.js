@@ -22,7 +22,7 @@ export default function EventDetailPage() {
 }
 
 async function loadEvent(id) {
-  const response = await fetch("http://localhost:8080/events/" + id);
+  const response = await fetch("https://event-management-backend-jr6r.onrender.com/events/" + id);
 
   if (!response.ok) {
     throw new Response(
@@ -37,7 +37,7 @@ async function loadEvent(id) {
   }
 }
 async function loadEvents() {
-  const response = await fetch("http://localhost:8080/events");
+  const response = await fetch("https://event-management-backend-jr6r.onrender.com/events");
 
   if (!response.ok) {
     // return { isError: true, message: "Could not fetch events" };
@@ -63,7 +63,7 @@ export async function loader({ params }) {
 
 export async function action({ request, params }) {
   const eventId = params.eventId;
-  const response = await fetch("http://localhost:8080/events/" + eventId, {
+  const response = await fetch("https://event-management-backend-jr6r.onrender.com/events/" + eventId, {
     method: request.method,
   });
 
